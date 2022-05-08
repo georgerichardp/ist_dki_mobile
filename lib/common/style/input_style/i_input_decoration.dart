@@ -9,6 +9,7 @@ class IInputDecoration extends InputDecoration {
     required InputBorder border,
     required InputBorder enableBorder,
     required Color fillColor,
+    required EdgeInsetsGeometry contentPadding,s
   }) : super(
           hintText: hintText,
           suffixIcon: suffixIcon,
@@ -19,6 +20,8 @@ class IInputDecoration extends InputDecoration {
           errorBorder: border,
           focusedBorder: border,
           fillColor: fillColor,
+    isDense: true,
+    contentPadding: contentPadding,
     filled: true,
         );
   factory IInputDecoration.primary({
@@ -37,7 +40,7 @@ class IInputDecoration extends InputDecoration {
       enableBorder: OutlineInputBorder(
         borderSide: const BorderSide(color: Palette.neutral50, width: 1),
         borderRadius: BorderRadius.circular(8.0),
-      ),
+      ), contentPadding: const EdgeInsets.all(16),
     );
   }
 }

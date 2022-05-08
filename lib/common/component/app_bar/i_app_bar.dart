@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/palette/palette.dart';
-import '../../core/style/text_style/i_title_style.dart';
+import '../../style/text_style/i_text_style.dart';
 
 class IAppBar extends AppBar {
   IAppBar({
